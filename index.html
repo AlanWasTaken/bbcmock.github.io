@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BBC Clone Site</title>
+    
+    <link href="css/mystyles.css" rel="stylesheet">
+    <script src="js/myscript.js"></script>
+    
+</head>
+
+<body>
+	
+    <div id="container">
+    	<div id="topbar">
+        	<div class="fixedwidth">
+            	<div id="logobbc">
+                	<img src="images/BBC-logo40px.png">
+                </div>
+                <div id="signinbbc">
+                	<img src="images/signinbbc.PNG">
+                </div>
+                <div id="topmenu">
+                	<ul>
+                    	<li class="news">News</li>
+                        <li class="sport">Sport</li>
+                        <li class="weather">Weather</li>
+                        <li class="iplayer">iPlayer</li>
+                        <li class="tv">TV</li>
+                        <li class="radio">Radio</li>
+                        <li class="more">More...</li>
+                    </ul>
+                </div>
+                <div id="search">
+                	<input type="text" placeholder="Search"/>
+                </div>
+        	</div>
+        </div>
+        
+        <div class="break"></div>
+        
+		<div id="headerbar">
+        	<div class="fixedwidth">
+            	<div class="title">
+                    <h1>NEWS UK</h1>
+                    <h2>LONDON</h2>
+                    <h3>Date Placeholder</h3>
+                </div>
+                <div class="info">
+                	<p id="rss">RSS<img src="images/RSS50px.png"></p>
+                	<p id="weather">Weahter Placeholder<img src="images/cloudy80px.png"></p>
+                </div>
+                
+                <div class="break"></div>
+                
+             	<div id="navbar">
+                	<ul>
+                    	<li>Home</li>
+                        <li>World</li>
+                        <li>UK</li>
+                        <li>England</li>
+                        <li>N. Ireland</li>
+                        <li>Scotland</li>
+                        <li>Wales</li>
+                        <li>Business</li>
+                        <li>Politics</li>
+                        <li>Health</li>
+                        <li>Education</li>
+                        <li>Sci/Environment</li>
+                        <li>Technology</li>
+                        <li style="border-right:none">Entertainment & Arts</li>
+                    </ul>
+                </div>
+                
+              </div>
+          </div>
+          
+           <div class="break"></div>
+                
+                <div id="maincontent">
+                	<div class="fixedwidth">
+                    	<p id="date"></p>
+							<script>
+								var d = new Date();
+								document.getElementById("date").innerHTML = d.toUTCString();
+                            </script>
+                     </div>
+                        <div class="firstarticle">
+                            <h1>Mars One CEO responds to criticism of the spacefaring project</h1>
+                            <h2>Candidates paying to win is "simply a lie."</h2>
+                            <p>By Sean O'Kane  on March 19, 2015 04:05 pm</p>
+                            <iframe width="559" height="314" src="https://www.youtube.com/embed/d5LmxFBlm60" frameborder="0" allowfullscreen></iframe>
+                            
+                        </div>
+                        <div class="secondarticle">
+                        	<h1>Tag Heuer teams up with Google and Intel for Android watch</h1>
+                            <p>By Leo Kelion Technology desk editor</p>
+                            <img src="images/tag.jpg">
+                            <img id="leftarrow" src="images/leftarrowhover.png">
+                            <img id="rightarrow" src="images/rightarrowhover.png">
+                        </div>
+                        <div class="thirdarticle">
+                        	<h1>Tunisia museum attack: Locals fear tourism backlash</h1>
+                            <h2>21 victims, most of them tourists, were killed when gunmen stormed the museum</h2>
+                            <p>By Sylvia Thomson, CBC News Posted: Mar 19, 2015 6:34 PM ET</p>
+                            <img src="images/tunisia.JPG">
+                            
+                        </div>
+                        
+                    </div>
+    	
+        
+    </div>
+
+</body>
+</html>
